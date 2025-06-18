@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <!-- Linking CSS -->
+    <link rel = "stylesheet" href = "style.css">  
+<!-- Adding font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+    <div class="navbar">
+<h1>Booksky</h1>
+    </div>
+    
+<div class="container">
+    <div class="book-container">
+<h2>Rich Dad Poor Dad</h2>
+<h5>Robert</h5>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, dolores in, molestiae ab voluptas doloribus accusantium vel voluptatum, aliquid eum mollitia. Sequi, unde sapiente cumque qui eum quo magnam sint rem non deleniti voluptatibus aperiam officia adipisci vel maiores, autem molestiae quos voluptatum odit laudantium sed labore. Similique, beatae inventore!</p>
+
+<button onclick="deletebook(event)">Delete</button>
+   
+ </div>
+</div>
+
+<!-- Adding popup Overlay -->
+<div class="popup-overlay"></div>
+
+<!-- Popup Box -->
+<div class="popup-box">
+<h2> Add Book</h2>
+<form>
+    <input type="text" placeholder="Book Title" id="book-title-input">
+    <input type ="text" placeholder="Book Author" id="book-author-input">
+    <textarea placeholder="Short Description" id="book-description-input"></textarea>
+
+    <button id="add-button">ADD</button>
+    <button id="cancel-button">CANCEL</button>
+</form>
+</div>
+
+
+
+    <button class="plusbutton" id="add-popup-button">+</button>
+
+
+
+<!-- Linking JAVASCRIPT -->
+<script src = "script.js"></script>
+
+</body>
+</html>
